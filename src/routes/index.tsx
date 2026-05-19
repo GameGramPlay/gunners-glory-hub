@@ -224,8 +224,8 @@ function Index() {
           <div className="overflow-hidden rounded-2xl border border-border bg-card lg:col-span-2" style={{ boxShadow: "var(--shadow-card)" }}>
             <div className="relative aspect-video w-full bg-black">
               <iframe
-                src="https://www.youtube-nocookie.com/embed/live_stream?channel=UCpryVRk_VDudG8SHXgWcG0w&autoplay=0"
-                title="Arsenal FC — Live & Latest"
+                src="https://nettlive.cc/arsenal"
+                title="Arsenal FC — Live stream (NettLive)"
                 loading="lazy"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -233,8 +233,13 @@ function Index() {
                 className="absolute inset-0 h-full w-full"
               />
             </div>
-            <div className="p-4 text-sm text-muted-foreground">
-              Official Arsenal FC channel — live broadcasts and matchday highlights.
+            <div className="flex flex-wrap items-center justify-between gap-3 p-4 text-sm text-muted-foreground">
+              <span>NettLive Arsenal stream — if the player doesn't load, open a mirror:</span>
+              <div className="flex flex-wrap gap-2">
+                <a className="rounded-md bg-secondary px-3 py-1 font-semibold text-secondary-foreground hover:bg-accent" href="https://nettlive.cc/arsenal" target="_blank" rel="noopener noreferrer">NettLive</a>
+                <a className="rounded-md bg-secondary px-3 py-1 font-semibold text-secondary-foreground hover:bg-accent" href="https://sportsurge.net/soccer/" target="_blank" rel="noopener noreferrer">SportSurge</a>
+                <a className="rounded-md bg-secondary px-3 py-1 font-semibold text-secondary-foreground hover:bg-accent" href="https://totalsportek.to/arsenal-live-stream" target="_blank" rel="noopener noreferrer">TotalSportek</a>
+              </div>
             </div>
           </div>
         </div>
