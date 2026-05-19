@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { LiveTranslate } from "@/components/LiveTranslate";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const navItems = ["History", "Stadium", "Live Center", "Standings", "Media", "Schedule", "Squad", "Honours"];
+const navItems = ["History", "Stadium", "Live Center", "Broadcast", "Standings", "Media", "Schedule", "Squad", "Honours"];
 
 const stadiumTabs = {
   Overview: {
