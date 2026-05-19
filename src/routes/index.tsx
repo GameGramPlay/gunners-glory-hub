@@ -373,7 +373,10 @@ function Index() {
       <footer className="bg-[var(--navy)] py-10 text-center text-sm text-primary-foreground/70">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-3 flex justify-center text-primary-foreground/90"><Cannon /></div>
-          © 2026 Arsenal Dashboard Fan Page. Built with premium structural optimization frameworks.
+          <p>© 2026 Arsenal Dashboard Fan Page. Built with premium structural optimization frameworks.</p>
+          <p className="mt-2 text-primary-foreground/60">
+            Crafted by <span className="font-bold text-[var(--gold)]">Luigi</span> — unofficial fan project, not affiliated with Arsenal FC or beIN Media Group.
+          </p>
         </div>
       </footer>
     </main>
