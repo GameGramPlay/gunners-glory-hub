@@ -104,6 +104,9 @@ function Index() {
           <p className="mt-4 text-lg font-medium text-primary-foreground/80 md:text-xl">
             The Gunners <span className="mx-2 text-[var(--gold)]">•</span> Victoria Concordia Crescit
           </p>
+          <div className="mt-8">
+            <LiveTranslate />
+          </div>
         </div>
         <nav className="relative border-t border-white/10 bg-black/20 backdrop-blur">
           <div className="mx-auto flex max-w-6xl flex-wrap gap-1 overflow-x-auto px-6 py-3">
