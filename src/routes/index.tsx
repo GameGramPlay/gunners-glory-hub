@@ -187,6 +187,51 @@ function Index() {
         </div>
       </Section>
 
+      <Section id="broadcast" eyebrow="Watch Live" title="Broadcast & Live Translations">
+        <p className="mb-6 text-muted-foreground">
+          beIN Connect doesn't allow direct embedding (their servers refuse iframe loads). Launch the live stream in a new tab, or watch official Arsenal live content below — the entire page also translates live into 8 languages from the buttons in the header.
+        </p>
+        <div className="grid gap-6 lg:grid-cols-3">
+          <a
+            href="https://www.beinconnect.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-6 transition hover:-translate-y-1"
+            style={{ boxShadow: "var(--shadow-card)" }}
+          >
+            <div>
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
+                <span className="h-2 w-2 animate-pulse rounded-full bg-primary" /> beIN Connect
+              </div>
+              <h3 className="text-xl font-bold text-foreground">Open the live match stream</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Subscribers can watch every Arsenal Premier League and UCL fixture in HD with multi-language commentary on beIN Connect.
+              </p>
+            </div>
+            <span className="mt-6 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-wider text-primary">
+              Launch stream
+              <svg className="h-4 w-4 transition group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </span>
+          </a>
+          <div className="overflow-hidden rounded-2xl border border-border bg-card lg:col-span-2" style={{ boxShadow: "var(--shadow-card)" }}>
+            <div className="relative aspect-video w-full bg-black">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/live_stream?channel=UCpryVRk_VDudG8SHXgWcG0w&autoplay=0"
+                title="Arsenal FC — Live & Latest"
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="absolute inset-0 h-full w-full"
+              />
+            </div>
+            <div className="p-4 text-sm text-muted-foreground">
+              Official Arsenal FC channel — live broadcasts and matchday highlights.
+            </div>
+          </div>
+        </div>
+      </Section>
+
       <Section id="standings" eyebrow="Table" title="Premier League Standings (Top 5)">
         <div className="overflow-hidden rounded-2xl border border-border bg-card" style={{ boxShadow: "var(--shadow-card)" }}>
           <table className="w-full text-left">
