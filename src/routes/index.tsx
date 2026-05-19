@@ -271,8 +271,16 @@ function Index() {
         <div className="grid gap-6 md:grid-cols-2">
           {media.map((m) => (
             <div key={m.title} className="group overflow-hidden rounded-2xl border border-border bg-card transition hover:-translate-y-1" style={{ boxShadow: "var(--shadow-card)" }}>
-              <div className="relative flex aspect-video items-center justify-center bg-gradient-to-br from-primary to-[var(--navy)]">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/95 text-2xl text-primary transition group-hover:scale-110">▶</div>
+              <div className="relative aspect-video w-full bg-black">
+                <iframe
+                  src={m.src}
+                  title={m.title}
+                  loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  className="absolute inset-0 h-full w-full"
+                />
               </div>
               <div className="p-5">
                 <h3 className="text-lg font-bold text-foreground">{m.title}</h3>
