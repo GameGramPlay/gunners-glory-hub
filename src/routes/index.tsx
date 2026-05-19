@@ -60,8 +60,16 @@ const honours = [
 ];
 
 const media = [
-  { title: "West Ham vs Arsenal | Highlights", meta: "Duration: 8:45 • Premier League Log" },
-  { title: "Arsenal vs Burnley | Goals & Analysis", meta: "Duration: 10:12 • Premier League Log" },
+  {
+    title: "Arsenal — Latest official highlights",
+    meta: "Premier League • Official channel",
+    src: "https://www.youtube-nocookie.com/embed/videoseries?list=UULFpryVRk_VDudG8SHXgWcG0w",
+  },
+  {
+    title: "Arsenal — Goals & analysis playlist",
+    meta: "Match analysis • Official channel",
+    src: "https://www.youtube-nocookie.com/embed/videoseries?list=PLn-zM3GbWdf4M-IRzZK4P2icbVdpdEoau",
+  },
 ];
 
 function Cannon() {
