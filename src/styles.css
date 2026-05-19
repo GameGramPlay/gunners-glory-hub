@@ -157,4 +157,16 @@
     font-family: var(--font-display);
     letter-spacing: -0.01em;
   }
+  /* Performance: isolate heavy sections */
+  section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 800px;
+  }
+  /* Suppress Google Translate top banner & tooltips */
+  .goog-te-banner-frame.skiptranslate,
+  .goog-tooltip,
+  .goog-tooltip:hover,
+  #goog-gt-tt { display: none !important; }
+  body { top: 0 !important; }
+  .goog-text-highlight { background: transparent !important; box-shadow: none !important; }
 }
