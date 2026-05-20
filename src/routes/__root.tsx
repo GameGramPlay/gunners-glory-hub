@@ -80,6 +80,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Arsenal FC Dashboard — The Gunners" },
+      { name: "twitter:description", content: "Arsenal Football Club fan dashboard: history, stadium, live scores, standings, schedule, squad, and honours." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/BMurPz6wVYZf4zVzLa7jI9dLP6r2/social-images/social-1779250366575-Screenshot_2026-05-20_8.12.32_AM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/BMurPz6wVYZf4zVzLa7jI9dLP6r2/social-images/social-1779250366575-Screenshot_2026-05-20_8.12.32_AM.webp" },
     ],
     links: [
       {
